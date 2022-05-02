@@ -9,8 +9,7 @@ public class FDPProtect {
         String s = "", s2 = "";
         try {
             s = (String) Class.forName("org.lwjgl.opengl.Display").getMethod("getTitle").invoke(null);
-            s2 = /*(String) Class.forName("net.ccbluex.liquidbounce.LiquidBounce").getField("CLIENT_NAME").get(null);*/"FDPClient";
-            //Class LiquidBounce=Class.forName("net.ccbluex.liquidbounce.LiquidBounce");;
+            s2 = "FDPClientAntiLeak";
             System.out.println("Client Name: " + s);
             System.out.println("Client: " + s2);
             if (s.toLowerCase().contains("fdp") && s2.toLowerCase().contains("fdp")) {
